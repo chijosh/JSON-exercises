@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working with JSON</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container {
+            width: 1320px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h1>Working with JSON</h1>
+
+    <div id="output">
+    </div>
+    <button class="button" id="loadNew">Load</button> -->
+
+    <h1>Working with JSON</h1>
+
+    <form id="myForm">
+        Task: <input type="text" name="task" placeholder="add task">
+        <input class="button" type="submit" value="Add new Task">
+    </form>
+
+
+
+    <!-- <script type="text/javascript">
+        const output = document.getElementById('output')
+        const buttonClick = document.getElementById('loadNew');
+        buttonClick.addEventListener('click', () => {
+            loadAjax()
+        })
+
+        function loadAjax() {
+            const xhr = new XMLHttpRequest()
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    let data = xhr.responseText;
+                    let json = JSON.parse(data)
+
+                    // console.log(json.results[0].name.first);
+                    output.innerHTML = `<h2>${json.results[0].name.first} ${json.results[0].name.last}</h2> <br> <img src="${json.results[0].picture.large}" >`;
+                }
+            }
+            xhr.open('GET', 'https://randomuser.me/api/', true)
+            xhr.send()
+
+        }
+
+    </script> -->
+
+    <script src="/exercise7.js"></script>
+</body>
+
+</html>
